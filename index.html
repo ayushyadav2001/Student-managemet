@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mangement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+    <div class="nav-bar">
+        <div class="left-side">
+        <h4>Student Management</h4>
+        </div>
+        <div class="right-side">
+            <ul>
+                <li><a href="#student">Add Students</a> </li>
+                <li><a href="#sum">Addition</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<section class="Hero-section">
+    <img class="banner-image" src="https://www.webhopers.com/wp-content/uploads/2020/04/School-Management-Software-Development-Company-in-India-1200x480.jpg" alt="">
+</section>
+
+<!-- bout Us Section -->
+<section class="about-us" id="about">
+    <div class="about">
+      <img src="./img/ayush.jpg" class="pic">
+      <div class="text">
+        <h2>About Us</h2>
+        <h5>Front-end Developer & <span>Designer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+        <div class="data">
+        <a href="#" class="hire">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<br>
+<!-- Sum of Two Number -->
+<section id="sum">
+    <div class="calc" id="calculator">
+            <div class="cal-input">
+            <h2>Addition of Two Number</h2>
+               
+                <input type="text" class="num1" id="num1" placeholder="Enter first Number"><br>
+                <input type="text" class="num2" id="num2" placeholder="Enter second Number">
+                <button class="hire addbtn" id="btnAdd" onclick="add()">Add</button>
+                <br>
+                <div id="resultDiv" style="display:none;"> <span> Result is:</span> <span id="resultSpan"></span></div>
+
+                <!-- <br><span class="result" >Result</span> -->
+            </div>
+    </div>
+</section>
+<br>
+
+
+<!--  Add Students -->
+<section id="student" class="sec-2">
+
+    <div class="student">
+        <div id="warning" style="display:none; color: #fff; background-color: #4070f4; padding: 10px;"></div>
+        <br>
+        <div class="stInput">
+
+        <input  type="hidden" id="rowNum">
+        <input class="num3" type="text" id="st_name" placeholder="Enter your Name">
+        <input class="num3" type="text" id="st_rollNum" placeholder="Enter your Roll Number">
+        <input class="num3" type="text" id="st_branch" placeholder="Enter your Branch">
+        <input class="num3" type="text" id="st_collegeName" placeholder="Enter your College Name">
+        <br>
+        <button class="hire" id="btnAddEmp" onclick="addSt()">Add Student</button>
+        <button class="hire" id="btnUpdateSt" onclick="updateSt()" style="display: none;">Update Student</button>
+        <button class="hire" id="btnResetSt" onclick="reset()" style="display: none;">Reset</button>
+        <button class="hire" id="btnAllEmp" onclick="showAllSt()" >Show All Student</button>
+    </div>
+    <br>
+        <div class="table" id="tableContainer" style="display: none;">
+            <table border="1" width="100%">
+                <tr> 
+                    <th>S.No</th>
+                    <th>Student Name</th>
+                    <th>Student Roll Number</th>
+                    <th>Student Branch</th>
+                    <th>Student College  Name</th>
+                </tr>
+                <tbody id="tbodyValues">
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+ 
+
+<footer>
+    <div class="con">
+    <h3 class="item" >Created By <span>Ayush Yadav</span>| © All rights reserved</h3>
+
+    </div>
+</footer>
+
+    
+<script src="second.js"></script>
+</body>
+</html>
